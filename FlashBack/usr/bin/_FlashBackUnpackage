@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /User/Documents/FlashBack/Unpackage/
+unzip "*.zip"
+rm *.zip
+cp -r /User/Documents/FlashBack/Unpackage/* /Library/FlashBack/Backups/
+rm -r *
+
+exit 0

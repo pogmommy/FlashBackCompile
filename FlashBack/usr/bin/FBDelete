@@ -1,0 +1,5 @@
+#!/bin/bash
+
+crux _FlashBackDelete $1
+
+exit 0

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+shopt -s extglob # "Shell option set extglob" https://www.linuxjournal.com/content/bash-extended-globbing
+
+set -f # "Disable file name generation (globbing)."
+
+PACKAGEBACKUP=$1
+cd /Library/FlashBack/Backups
+zip -r /User/Documents/FlashBack/GeneratedPackages/$PACKAGEBACKUP.zip ./$PACKAGEBACKUP
+
+exit 0
