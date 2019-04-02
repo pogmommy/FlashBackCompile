@@ -11,15 +11,10 @@
         <key>dynamic-codesigning</key>
         <true/>
         <key>application-identifier</key>
-        <string>PRBH2T6668.com.mpg13.FlashBack</string>
+        <string>com.mpg13.FlashBack</string>
         <key>com.apple.developer.team-identifier</key>
-        <string>PRBH2T6668</string>
+        <string>com.mpg13</string>
         <key>get-task-allow</key>
-        <true/>
-        <key>keychain-access-groups</key>
-        <array>
-            <string>PRBH2T6668.com.mpg13.FlashBack</string>
-        </array>
-        
+        <true/>        
     </dict>
 </plist>
