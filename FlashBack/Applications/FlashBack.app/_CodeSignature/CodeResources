@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		Myhbo34Mzba1Vd2A/DUUSJxnVD4=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		tPVGmcsOfSKzncF+8Kb2FIP2knA=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		b16ZU2JqENN9u5SCzpgcljMdqYc=
+		k5cGqfsx8gOYBgKR1Ni7BsRjiAs=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		zQYhFEUrFp+fw9NgN6j7FtK3Ov8=
+		oWp7Bgw8n+Q2d4+F/uXUkyPreak=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,23 +26,31 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		au8bud+DuYMPxokzpm+udngBveE=
+		K1KAmOGAcVel/FJmCmBD9iaBJLI=
 		</data>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib</key>
 		<data>
-		SrxwtOH4Z3PEjQeMk2vvEG5GXuc=
+		gCCeNViCAIhKzO0FuKtMNFTLqMU=
+		</data>
+		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
+		<data>
+		ZT4nD95Zz0cg9RR9H4MP5Kk0Kmo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
 		MDrKFvFWroTb0+KEbQShBcoBvo4=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-11.0+.nib</key>
 		<data>
-		zo0ygl+kC76Sbh3crsofMv84aaI=
+		xfCVHYIS7xa3UQoARkqvXEnjrgc=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
+		<data>
+		FeE/H7BN1AelrLx6dFrZXLGk23I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xZ7J2QopyHYpKHBL7LnFE4PEUPU=
+		Cg1aoBQyHQMqe+kBKrP8iSlchYA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -42,23 +58,37 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		CbaHaklc7R5Bghf8trbU954ViYY=
+		KJRUrjA7t+awgVLVWvc85Kn0ups=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hMxJFn2Q8X2CHF5SnOE8+l9CeQaATCxnDstbs3mN4Rs=
+			</data>
+		</dict>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nx4xIL57Q8apHQidIHkz+NQKHjXYqt4f2sO7xzhjVTc=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MMXLck0YAeF04tMVoVoS/F2ZDrVMqRJc/w+LE6xv1WQ=
+			fvlEV58RJ1MjIhoF0NEEas8RVOIIv38jBqHn0XqJNhI=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yLYIl46WUQC2lqQUaA4URvEkLqN7sSjLvIEucKNWG+g=
+			yvABMxBoPxIrdwDfCy191IwA+1QrdR1YBsLU232pl08=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -72,14 +102,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ULPpOvgByjkfWYWOvJ/JCbq5t8LHqXreCcGFLwe0zA=
+			x4/12b6G4YUw4dvkMMT3eP7buH836fX9YvFvATKfSl0=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TsyZ8IhHt3E8WIv62ECyflsVo/6gNk7NMQkL6S9ipss=
+			OBnrgplum0Y/lD6b6n6AHDCYRecMGToTvBDae6Z5kHk=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NjjDLJTNTybRkqvx7MJonxRel0MYP3zs9pL6cyAD9xs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -89,18 +126,25 @@
 			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9HuXIGgXY7H9mxQV9aCirXc56b6xK+bPot/68r1qmY=
+			AlYP7jomXVgHIfs+nmGG55Uc1dhQEv66kzvZJPXglFM=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PtxxWyghuiJKcGIwzyc+sdCMG6TsQuQvSXx/LiDmEY0=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			myUkwSl/hVm6sAtmp1stDlHk+pVuPGLc/Ell7P4aP9E=
+			mBcw+GDr+7lXRYwRVZbwKUYwbjCHrSrTP0rFTUtBlUo=
 			</data>
 		</dict>
 	</dict>
