@@ -17,6 +17,7 @@ cp -r $SELECTLOCATION/Preferences/* /var/mobile/Library/Preferences/ || STATUS="
 cp -r $SELECTLOCATION/SBFolder/* /var/mobile/Library/SpringBoard/ || STATUS="cp failed"
 if [[ -d $SELECTLOCATION/AutoWall/ ]]
 then
+rm -rf "/var/mobile/Media/AutoWall/"*
 cp -rf "$SELECTLOCATION/AutoWall/"* "/var/mobile/Media/AutoWall/" &>/dev/null
 fi
 
