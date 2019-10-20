@@ -6,7 +6,7 @@ shopt -s extglob # "Shell option set extglob" https://www.linuxjournal.com/conte
 set -f # "Disable file name generation (globbing)."
 
 FLASHBACKDIR="/Library/FlashBack"
-PKGVERSION="3.1"
+PKGVERSION="3.4"
 PACKAGEBACKUP=$1
 
 if [ ! -d /var/mobile/Documents/FlashBackDEBs/ ]
@@ -19,7 +19,7 @@ apt-mark manual "*.*.*" &> /dev/null
 
 apt-mark showmanual > $FLASHBACKDIR/packages.txt
 tr '\n' ', ' < $FLASHBACKDIR/packages.txt > $FLASHBACKDIR/packagesformatted.txt
-truncate -s-1 $FLASHBACKDIR/packagesformatted.txt
+#truncate -s-1 $FLASHBACKDIR/packagesformatted.txt
 USERSETDEPENDENCIES=`cat $FLASHBACKDIR/packagesformatted.txt`
 
 mkdir $FLASHBACKDIR/tmp
@@ -28,13 +28,12 @@ mkdir $WORKINGDIR
 mkdir $WORKINGDIR/DEBIAN
 
 mkdir -p $WORKINGDIR$FLASHBACKDIR/Backups/$PACKAGEBACKUP
-
-cp -r $FLASHBACKDIR"/Backups/"$PACKAGEBACKUP/ $WORKINGDIR$FLASHBACKDIR/Backups/$PACKAGEBACKUP
+cp -r $FLASHBACKDIR/Backups/$PACKAGEBACKUP/ $WORKINGDIR$FLASHBACKDIR/Backups/$PACKAGEBACKUP
 
 cat > $WORKINGDIR/DEBIAN/control <<EOF
 Package: com.FlashBack.$PACKAGEBACKUP
 Name: $PACKAGEBACKUP
-Depends: $USERSETDEPENDENCIES
+Depends: $USERSETDEPENDENCIES system-cmds
 architecture: iphoneos-arm
 Version:$PKGVERSION
 Description: $USERDESC

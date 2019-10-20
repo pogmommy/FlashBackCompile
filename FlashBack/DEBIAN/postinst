@@ -2,7 +2,6 @@
 
 ldid -S/Library/FlashBack/enti.xml /Applications/FlashBack.app/FlashBack
 rm /Library/FlashBack/enti.xml
-uicache
 
 exit 0
 
