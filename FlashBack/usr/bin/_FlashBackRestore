@@ -6,6 +6,9 @@ shopt -s extglob # "Shell option set extglob" https://www.linuxjournal.com/conte
 set -f # "Disable file name generation (globbing)."
 
 SELECTBACKUP=$1
+TWEAKSBACKUP=$2
+ICONSBACKUP=$3
+WALLPAPERBACKUP=$4
 
 set +f
 FLASHBACKDIR="/Library/FlashBack"
@@ -13,16 +16,27 @@ SELECTLOCATION=$FLASHBACKDIR/Backups/$SELECTBACKUP
 
 # COPY BACKUP TO SYSTEM
 
-cp -r $SELECTLOCATION/Preferences/* /var/mobile/Library/Preferences/ || STATUS="cp failed"
-cp -r $SELECTLOCATION/SBFolder/* /var/mobile/Library/SpringBoard/ || STATUS="cp failed"
-if [[ -d $SELECTLOCATION/AutoWall/ ]]
+if [[ "$TWEAKSBACKUP" == "YES" ]]
 then
-rm -rf "/var/mobile/Media/AutoWall/"*
-cp -rf "$SELECTLOCATION/AutoWall/"* "/var/mobile/Media/AutoWall/" &>/dev/null
+  cp -r $SELECTLOCATION/Preferences/ /var/mobile/Library/Preferences/ || STATUS="cp failed"
+fi
+
+if [[ "$WALLPAPERBACKUP" == "YES" ]]
+then
+  cp -rf $SELECTLOCATION/SBFolder/@(*Background*|SB*) /var/mobile/Library/SpringBoard/  || STATUS="cp wallpaper failed"    #copy wallpaper files to SBFolder folder within backup
+if [[ -d /var/mobile/Media/AutoWall/ ]]
+then
+cp -rf "$SELECTLOCATION/AutoWall/"* "/var/mobile/Media/AutoWall/"
+fi
+fi
+
+if [[ "$ICONSBACKUP" == "YES" ]]
+then
+  cp -rf $SELECTLOCATION/SBFolder/@(*Icon*) /var/mobile/Library/SpringBoard/ || STATUS="cp icons failed"    #copy IconState Plist to SBFolder folder within backup
 fi
 
 # clear caches and respring
-uicache
+uicache --all || uicache
 recache --no respring &>/dev/null
 killall cfprefsd #Clear settings caches - thanks to Grant/NewD
 sbreload && exit 0 || killall -9 SpringBoard && exit 0 # Kill the script.

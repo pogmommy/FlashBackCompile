@@ -2,7 +2,7 @@ Package: com.mpg13.FlashBack
 Name: FlashBack
 Depends: mobilesubstrate,com.chpwn.iconsupport,com.creaturecoding.crux,ldid
 Conflicts: com.mpg13.FlashBackfree
-Version: 3.6.2
+Version: 3.7
 Architecture: iphoneos-arm
 Description: Changing the way we do setups.
 Maintainer: MPG13 <mpg13@micahpgomez.dev>
