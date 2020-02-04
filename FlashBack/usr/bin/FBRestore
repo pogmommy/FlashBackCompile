@@ -1,5 +1,30 @@
 #!/bin/bash
 
-crux _FlashBackRestore $1
+
+shopt -s extglob # "Shell option set extglob" https://www.linuxjournal.com/content/bash-extended-globbing
+
+set -f # "Disable file name generation (globbing)."
+
+SELECTBACKUP=$1
+
+set +f
+FLASHBACKDIR="/var/mobile/Library/FlashBack"
+SELECTLOCATION=$FLASHBACKDIR/Backups/$SELECTBACKUP
+
+# COPY BACKUP TO SYSTEM
+
+cp -r $SELECTLOCATION/Preferences/* /var/mobile/Library/Preferences/ || STATUS="cp failed"
+cp -r $SELECTLOCATION/SBFolder/* /var/mobile/Library/SpringBoard/ || STATUS="cp failed"
+if [[ -d $SELECTLOCATION/AutoWall/ ]]
+then
+rm -rf "/var/mobile/Media/AutoWall/"*
+cp -rf "$SELECTLOCATION/AutoWall/"* "/var/mobile/Media/AutoWall/" &>/dev/null
+fi
+
+# clear caches and respring
+uicache
+recache --no respring &>/dev/null
+killall cfprefsd #Clear settings caches - thanks to Grant/NewD
+sbreload && exit 0 || killall -9 SpringBoard && exit 0 # Kill the script.
 
 exit 0
