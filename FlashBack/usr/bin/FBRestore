@@ -1,5 +1,5 @@
 #!/bin/bash
 
-crux _FlashBackRestore $1 $2 $3 $4
+crux _FlashBackRestore $1
 
 exit 0
