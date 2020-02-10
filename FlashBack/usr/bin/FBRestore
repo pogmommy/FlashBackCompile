@@ -24,7 +24,5 @@ fi
 # clear caches and respring
 uicache
 recache --no respring &>/dev/null
-killall cfprefsd #Clear settings caches - thanks to Grant/NewD
-sbreload && exit 0 || killall -9 SpringBoard && exit 0 # Kill the script.
 
 exit 0
