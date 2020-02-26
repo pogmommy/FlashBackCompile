@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ldid -S/Library/FlashBack/enti.xml /Applications/FlashBack.app/FlashBack
+#ldid -S/Library/FlashBack/enti.xml /Applications/FlashBack.app/FlashBackRoot
 rm /Library/FlashBack/enti.xml
 
 exit 0
