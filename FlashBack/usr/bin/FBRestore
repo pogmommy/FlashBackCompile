@@ -14,7 +14,14 @@ SELECTLOCATION=$FLASHBACKDIR/Backups/$SELECTBACKUP
 # COPY BACKUP TO SYSTEM
 
 cp -r $SELECTLOCATION/Preferences/* /var/mobile/Library/Preferences/ || STATUS="cp failed"
+cp -r $SELECTLOCATION/HomePlusPreferences/* /var/mobile/Documents/HomePlus/ || STATUS="cp failed"
 cp -r $SELECTLOCATION/SBFolder/* /var/mobile/Library/SpringBoard/ || STATUS="cp failed"
+
+if [[ -d $SELECTLOCATION/HomePlusPreferences/ ]]
+then
+cp -r $SELECTLOCATION/HomePlusPreferences/* /var/mobile/Documents/HomePlus/ || STATUS="cp failed"
+fi
+
 if [[ -d $SELECTLOCATION/AutoWall/ ]]
 then
 rm -rf "/var/mobile/Media/AutoWall/"*
