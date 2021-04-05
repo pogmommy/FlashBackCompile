@@ -16,6 +16,7 @@ fi
 
 apt-mark auto "*" &> /dev/null
 apt-mark manual "*.*.*" &> /dev/null
+apt-mark auto "apt*" &> /dev/null
 
 apt-mark showmanual > $FLASHBACKDIR/packages.txt
 tr '\n' ', ' < $FLASHBACKDIR/packages.txt > $FLASHBACKDIR/packagesformatted.txt
